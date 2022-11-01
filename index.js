@@ -17,7 +17,7 @@ app.use(cors());
 app.use("/register",registerrouter);
 app.use("/",auth.authenticateuser);
 app.use("/question",questionrouter);
-app.use("/employees",employeeRouter);
+// app.use("/employees",employeeRouter);
 
 
 app.listen(process.env.PORT || 3001);
