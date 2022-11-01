@@ -52,5 +52,6 @@ exports.signin=async (req,res,next)=>{
     }
     const token=jwt.sign(existuser,"sey",{expiresIn:"1hr"});
     res.send(token);
+    
 
 };
